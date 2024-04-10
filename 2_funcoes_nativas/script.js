@@ -1,4 +1,4 @@
-// Exemplo de Funções Built-in
+// Exemplo de Funções Built-in (Funções nativas)
 // Prompt:
 let nome = prompt('Informe o seu nome:');
 
