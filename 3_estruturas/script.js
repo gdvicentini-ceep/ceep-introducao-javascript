@@ -80,3 +80,40 @@ switch(cor) {
         break;
 
 }
+
+// Laços de Repetição (WHILE, DO WHILE e FOR)
+console.log("-----------------------------");
+// WHILE:
+let contador = 10
+
+while(contador > 0) {
+    console.log('Looping while: ', contador)
+    // Todo laço de repetição precisa controlar a situação de parada para forçar sair do laço
+    contador = contador - 1 //contador--
+}
+
+// DO WHILE
+console.log("-----------------------------");
+let numero = 100
+
+do {
+    console.log('looping do-while: ', numero)
+    numero = numero - 5
+
+} while (numero < 10)
+
+// FOR
+console.log("-----------------------------");
+let passo
+
+for(passo = 0; passo < 10; passo = passo + 1) {
+    console.log('looping for: ', passo)
+}
+
+let numeroTabuada = prompt('Informe um número para ver a sua tabuada: ')
+let resultado
+
+for(let i = 1; i < 11; i++) {
+    resultado = numeroTabuada * i
+    console.log(`${numeroTabuada} X ${i} = ${resultado}`)
+}
