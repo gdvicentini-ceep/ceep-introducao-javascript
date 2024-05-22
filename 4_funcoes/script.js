@@ -30,4 +30,42 @@ console.log("Exemplo com função anônima: ", soma(15, 20))
 console.log("Exemplo com função convencional: ", resultadoSoma)
 
 console.log("------------------------------")
-// Função Seta (Arrow Function)
+// Função Seta (Arrow Function)  =>
+let parOuImpar = (numero) => {
+  if(numero % 2 == 0) {
+    console.log(`O número ${numero} é par`)
+  } else {
+    console.log(`O número ${numero} é impar`)
+  }
+}
+
+parOuImpar(10)
+parOuImpar(15)
+parOuImpar(4)
+
+let multiplicar = numero => numero * numero
+
+let multiplicar2 = (numero) => {
+  return numero * numero
+}
+
+console.log(`Arrow function reduzida: ${multiplicar(5)}`)
+console.log(`Arrow function convencional: ${ multiplicar2(5)}`)
+
+console.log("-----------------------")
+// Funções com Argumentos Opcionais
+function nomeComIdade(nome, idade) {
+  if(idade === undefined) {
+    console.log(`Seu nome é ${nome}`)
+  } else {
+    console.log(`Seu nome é ${nome} e você tem ${idade} anos`)
+  }
+}
+
+nomeComIdade("João", 16)
+nomeComIdade("Carlos")
+
+// Funções com Valores Padrão (Default)
+function repetirFrase(frase, numeroRepeticao) {
+  
+}
