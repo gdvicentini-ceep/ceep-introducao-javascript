@@ -65,7 +65,13 @@ function nomeComIdade(nome, idade) {
 nomeComIdade("João", 16)
 nomeComIdade("Carlos")
 
+console.log("-----------------------")
 // Funções com Valores Padrão (Default)
-function repetirFrase(frase, numeroRepeticao) {
-  
+function repetirFrase(frase, numeroRepeticao=2) {
+  for(let i = 0; i < numeroRepeticao; i++) {
+    console.log(frase + " " + (i+1))
+  }
 }
+
+repetirFrase("Texto", 5);
+repetirFrase("Texto");
