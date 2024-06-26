@@ -44,5 +44,3 @@ const soma = numeros2.reduce((acumulador, numero) => {
   console.log('estou no reduce', somaInterna);
   return somaInterna;
 }, 0);
-
-
