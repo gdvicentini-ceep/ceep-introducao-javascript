@@ -57,6 +57,22 @@ console.log("-----------------")
 // Função find:
 
 let encontrarCliente = clientes.find((pessoa) => {
-  return pessoa.nome === "João"
+  return pessoa.nome === "Kirby"
 })
-console.log(`variável encontrarCliente:\n ${encontrarCliente}`)
+console.log(`variável encontrarCliente:\n ${JSON.stringify(encontrarCliente)}`)
+
+console.log("-----------------")
+// Função filter:
+
+let clientesComCep = clientes.filter((pessoa) => {
+  return pessoa.endereco.cep
+});
+
+//console.log(clientesComCep)
+
+console.log("\n\n-----------------")
+// Função sort:
+let clientesOrdenadosPorNome = clientes.sort((a, b) => {
+  return a.nome.localeCompare(b.nome)
+});
+console.log(clientesOrdenadosPorNome)
